@@ -1,0 +1,202 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: #ffffff;
+  overflow: hidden; /* Prevent page scroll */
+}
+
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #121212;
+  padding: 2rem;
+  overflow: auto; /* Allow container scroll */
+}
+
+.home-box {
+  background-color: #1e1e1e;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  max-width: 600px;
+  width: 100%;
+}
+
+.home-title {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+}
+
+.signout-button {
+  padding: 0.75rem 1.5rem;
+  background-color: #bb86fc;
+  border: none;
+  border-radius: 4px;
+  color: #121212;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 2rem;
+}
+
+.signout-button:hover {
+  background-color: #3700b3;
+}
+
+.add-movie-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.add-movie-input {
+  padding: 0.75rem;
+  border: 1px solid #333;
+  border-radius: 4px;
+  font-size: 1rem;
+  background-color: #333;
+  color: #ffffff;
+}
+
+.add-movie-label {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+}
+
+.add-movie-label input {
+  margin-right: 0.5rem;
+}
+
+.add-movie-button {
+  padding: 0.75rem;
+  background-color: #bb86fc;
+  border: none;
+  border-radius: 4px;
+  color: #121212;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-movie-button:hover {
+  background-color: #3700b3;
+}
+
+.movie-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.movie-item {
+  background-color: #2c2c2c;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+.movie-title {
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+.movie-year,
+.movie-oscar {
+  font-size: 1rem;
+  color: #bbbbbb;
+}
+
+.edit-button,
+.delete-button,
+.save-button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  color: #ffffff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  position: absolute;
+  top: 1rem;
+}
+
+.edit-button {
+  background-color: #4caf50;
+  right: 6rem; /* Adjusted to provide space between buttons */
+}
+
+.edit-button:hover {
+  background-color: #388e3c;
+}
+
+.delete-button {
+  background-color: #ff4d4d;
+  right: 1rem;
+}
+
+.delete-button:hover {
+  background-color: #ff1a1a;
+}
+
+.save-button {
+  background-color: #4caf50;
+  right: 1rem;
+}
+
+.save-button:hover {
+  background-color: #388e3c;
+}
+
+.edit-movie {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: center; /* Center the edit input and button */
+}
+
+.edit-movie-input {
+  padding: 0.5rem;
+  border: 1px solid #333;
+  border-radius: 4px;
+  font-size: 1rem;
+  background-color: #333;
+  color: #ffffff;
+}
+
+.loading {
+  font-size: 1.5rem;
+  color: #bb86fc;
+  margin-top: 2rem;
+}
+
+/* Custom scrollbar styles */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1e1e1e;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #bb86fc;
+  border-radius: 8px;
+  border: 3px solid #1e1e1e;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #3700b3;
+}
